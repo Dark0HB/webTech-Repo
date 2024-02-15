@@ -1,0 +1,317 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+   background-color:rgb(16, 61, 102) ;
+}
+.container{
+    height: 350px;
+    width: 700px;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    margin-top: 70px;
+    display: flex;
+}
+.main{
+    height: 350px;
+    width: 200px;
+    /* border: 1px solid black; */
+    background-color:rgb(8, 24, 39) ;
+    border-radius: 12px;
+    
+}
+.cards{
+    height: 350px;
+    width: 480px;
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-areas: ' second third fourth'
+    'fifth sixth seventh';
+    gap: 10px;
+    padding-left: 20px;
+}
+.second{
+    grid-area: second;
+    box-shadow: 5px orange;
+    background-color: orange;
+    position: relative;
+    border-radius: 14px ;
+
+}
+.third{
+    grid-area: third;
+   
+    background-color: aqua;
+    position: relative;
+    border-radius: 14px ;
+}
+.fourth{
+    grid-area: fourth;
+ 
+    background-color: palevioletred;
+    position: relative;
+    border-radius: 14px ;
+}
+.fifth{
+    grid-area: fifth;
+    
+    background-color: lawngreen;
+    position: relative;
+    border-radius: 14px ;
+}
+.sixth{
+    grid-area: sixth;
+    
+    background-color: purple;
+    position: relative;
+    border-radius: 14px ;
+}
+.seventh{
+    grid-area: seventh;
+    background-color: orange;
+    position: relative;
+    border-radius: 14px ;
+}
+.one{
+    height: 25%;
+    /* border: 2px solid black; */
+    padding-top: 10px;
+    padding-left: 18px;
+    background-color: blueviolet;
+    border-top-right-radius: 20px ;
+    border-top-left-radius: 20px ;
+}
+.one img{
+    height:70px;
+    width: 70px;
+    border-radius: 100%;
+    
+}
+.one img:hover{
+   height: 90px;
+   width: 90px;
+}
+.two{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 45%;
+    /* border: 1px solid black; */
+    padding: 20px;
+    border-bottom-right-radius: 20px ;
+    border-bottom-left-radius: 20px ;
+    background-color: blueviolet;
+}
+.two h1{
+   font-size: 30px;
+   color: white;
+   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.two h1:hover{
+font-size: 32px;
+}
+.three{
+    height: 30%;
+    /* border: 2px solid black; */
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: rgb(8, 24, 39);
+    border-radius: 14px;
+    
+
+}
+.three p:nth-child(1){
+    color: rgba(230, 214, 214, 0.2);
+ }
+.three p:nth-child(2){
+   color: white;
+}
+.three p:nth-child(3){
+    color: rgba(230, 214, 214, 0.2);
+ }
+ /* .asec{
+    height: 20%;
+    
+    border: 1px solid black;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: rgb(240, 148, 29);
+ } */
+ 
+ .bsec{
+    height: 90%;
+    width: 146px;
+    border: 1px solid black; 
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(1,1,49 );
+    
+    position: absolute;
+    bottom: 0;
+    color: white;
+ }
+ .bsec:hover{
+   height: 100%;
+ }
+ .p1{
+    font-weight: bold;
+    padding-top: 15px;
+ }
+ .p2{
+    
+    padding-top: 15px;
+ }
+ .bsec h1{
+    padding-top: 15px;
+    font-size: 40px;
+ }
+ 
+.bthird{
+   
+      height: 90%;
+      width: 146px;
+      border: 1px solid black; 
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      padding-left: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(1,1,49 );
+      position: absolute;
+      bottom: 0;
+      color: white;
+   }
+   .p3{
+      font-weight: bold;
+      padding-top: 15px;
+   }
+   .p4{
+      
+      padding-top: 15px;
+   }
+   .bthird:hover{
+      height: 100%;
+    }
+   .bfourth{
+      height: 90%;
+      width: 146px;
+      border: 1px solid black; 
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      padding-left: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(1,1,49 );
+      position: absolute;
+      bottom: 0;
+      color: white;
+   }
+   .p6{
+      font-weight: bold;
+      padding-top: 15px;
+   }
+   .p5{
+      
+      padding-top: 15px;
+   }
+   .bfourth:hover{
+      height: 100%;
+    }
+   .bfifth{
+      height: 90%;
+      width: 146px;
+      border: 1px solid black; 
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      padding-left: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(1,1,49 );
+      position: absolute;
+      bottom: 0;
+      color: white;
+   }
+   .p8{
+      font-weight: bold;
+      padding-top: 15px;
+   }
+   .p7{
+      
+      padding-top: 15px;
+   }
+   .bfifth:hover{
+      height: 100%;
+    }
+   .bsixth{
+      height: 90%;
+      width: 146px;
+      border: 1px solid black; 
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      padding-left: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(1,1,49 );
+      position: absolute;
+      bottom: 0;
+      color: white;
+   }
+   .p9{
+      font-weight: bold;
+      padding-top: 15px;
+   }
+   .p10{
+      
+      padding-top: 15px;
+   }
+   .bsixth:hover{
+      height: 100%;
+    }
+   .bseventh{
+      height: 90%;
+      width: 146px;
+      border: 1px solid black; 
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      padding-left: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(1,1,49 );
+      position: absolute;
+      bottom: 0;
+      color: white;
+   }
+   .bseventh:hover{
+      height: 100%;
+    }
+    .p11{
+      font-weight: bold;
+      padding-top: 15px;
+   }
+   .p12{
+      
+      padding-top: 15px;
+   }
+   .bthird h1{
+      padding-top: 15px;
+      font-size: 40px;
+   }
+   .bfourth h1{
+      padding-top: 15px;
+      font-size: 40px;
+   }
+   .bfifth h1{
+      padding-top: 15px;
+      font-size: 40px;
+   }
+   .bsixth h1{
+      padding-top: 15px;
+      font-size: 40px;
+   }
+   .bseventh h1{
+      padding-top: 15px;
+      font-size: 40px;
+   }
+
+ 
+ 
+ 
+ 
