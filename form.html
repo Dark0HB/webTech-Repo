@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body
+    style="
+      background: linear-gradient(160deg, black, maroon);
+      box-sizing: border-box;
+    "
+  >
+    <!-- Method attribute will specify what kind of action we want to perform on html
+    form. method attribute values are diaglog, get, post.
+    Action attirbute will specify where we want to store the data of the form. 
+    VALIDATION ATTRIBUTES IN HTML FORM:
+    There are 12 types of validation attirbutes in HTML form such as
+    Placeholder,Readonly , Disable, size,step, maxleght, minlength, max, min , pattern, input field, required
+    -->
+
+
+    <form
+      action="./nhjg.php"
+      method="get"
+      style="
+        border: 1px solid black;
+        height: 440px;
+        width: 400px;
+        margin: 0 auto;
+        padding-left: 100px;
+        background: linear-gradient(beige, white, maroon);
+        border-radius: 5px;
+      "
+    >
+      <label for="user">Username:</label>
+      <input
+        type="text"
+        id="user"
+        placeholder="Your Name"
+        required
+        pattern="[A-Z a-z 0-9]{10}"
+      />
+      <br />
+      <br />
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        name=""
+        id="email"
+        placeholder="Email Address"
+        required
+      />
+      <br />
+      <br />
+
+      <label for="no">Phone No:</label>
+      <input
+        type="tel"
+        name=""
+        id="no"
+        placeholder="Your Number"
+        maxlength="10"
+        minlength="10"
+        required
+      />
+      <br />
+      <br />
+
+      <label for="pass">Password:</label>
+      <input
+        type="password"
+        name=""
+        id="pass"
+        placeholder="Password"
+        minlength="6"
+        maxlength="12"
+        required
+      />
+      <br />
+      <br />
+
+      <label for="">City:</label>
+      <select name="" id="" required>
+        <option value="" selected disabled>Select City Name</option>
+        <option value="">Gurugram</option>
+        <option value="">Delhi</option>
+        <option value="">Jind</option>
+        <option value="">Noida</option>
+      </select>
+      <br />
+      <br />
+      <label for="add">Address:</label>
+      <textarea
+        name=""
+        id="add"
+        rows="1"
+        cols="30"
+        placeholder="Where you live?"
+        required
+      ></textarea>
+      <br />
+      <br />
+      <label for="dob">Date Of Birth:</label>
+      <input type="date" name="" id="dob" required />
+
+      <br />
+      <br />
+      <label for="gen">Gender:</label>
+      <input type="radio" name="gender" id="male" />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="female" />
+      <label for="female">Female</label>
+
+      <br />
+      <br />
+      <label for="">Select Skills:</label>
+      <input type="checkbox" name="" id="java" />
+      <label for="java">Java</label>
+      <input type="checkbox" name="" id="js" />
+      <label for="js">JavaScript</label>
+      <input type="checkbox" name="" id="py" />
+      <label for="py">Python</label>
+
+      <br />
+      <br />
+      <label for="resume">Upload Your Resume:</label>
+      <input type="file" name="" id="resume" />
+
+      <br />
+      <br />
+      <label for="color">Select Color:</label>
+      <input type="color" name="" id="color" />
+      <input type="submit" value="Submit" id="sub" />
+      <input type="reset" value="Reset" id="reset" />
+    </form>
+  </body>
+</html>
