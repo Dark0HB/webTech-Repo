@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        h2{
+            font-size: 50px;
+            margin-left: 420px;
+        }
+      section {
+        margin: 0 auto;
+        /* margin-top: 0px; */
+        height: 300px;
+        width: 600px;
+        border: 1px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: top;
+        background-color: orange;
+      }
+      .spanmar {
+        position: relative;
+        margin-bottom: 270px;
+        font-style: italic;
+      }
+      .border {
+        position: absolute;
+        height: 230px;
+        width: 500px;
+        border: 1px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: yellow;
+      }
+      .spanbor {
+        position: relative;
+        margin-bottom: 200px;
+        font-style: italic;
+        font-weight: bolder;
+      }
+      .padding {
+        position: absolute;
+        height: 170px;
+        width: 400px;
+        border: 1px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: yellowgreen;
+      }
+      .spanpad {
+        position: relative;
+        margin-bottom: 150px;
+        font-style: italic;
+      }
+      .content {
+        position: absolute;
+        height: 120px;
+        width: 300px;
+        border: 1px solid;
+        text-align: top;
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h2><u>Box Model</u></h2>
+    <section class="margin">
+      <span class="spanmar">margin</span>
+      <div class="border">
+        <span class="spanbor">border</span>
+        <div class="padding">
+          <span class="spanpad">padding</span>
+          <div class="content"><i>content</i></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
